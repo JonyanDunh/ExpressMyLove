@@ -1,0 +1,130 @@
+
+<?php
+
+/*if( !headers_sent() && // 如果页面头部信息还没有输出
+extension_loaded("zlib") && // 而且php已经加载了zlib扩展
+strstr($_SERVER["HTTP_ACCEPT_ENCODING"],"gzip")) //而且浏览器接受GZIP
+{
+  ini_set('zlib.output_compression', 'On');
+  ini_set('zlib.output_compression_level', '9');
+}*/
+
+?>
+
+
+<?php require_once( './islogin.php');?>
+<!--
+DEGINX版权所有 | 盗版必究
+https://www.deginx.com
+2020/03/14
+-->
+<?php
+
+if(islogin())
+
+
+?>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="keywords" content="表白墙,xx一中表白墙,xx一中,xxx第一中学,xx,xx表白墙,一中表白墙,中学表白墙,第一中学表白墙,xx市第一中学表白墙">
+  <meta name="description" content="这里是xxx第一中学表白墙,快来这向喜欢的TA尽情地表白吧!本网站不会收集任何用户个人信息,非个人信息收集即使您没有发送任何个人信息,我们会依据您对本网站的使用情况而收集信息(称为'非个人信息')。" />
+  <title>一中表白墙</title>
+  <link rel="stylesheet" href="assets/js/mdui3.min.css">
+  <script src="assets/js/mdui.min.js"></script>
+  
+ <link defer="defer" rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" media="screen" />
+  <style>
+    a {
+      text-decoration:none
+    }
+    a:hover {
+      text-decoration:none
+    }
+  </style>
+</head>
+<header class="mdui-appbar mdui-appbar-fixed">
+  <body defer="defer" background="data:image/png;base64,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 KzAwOjAwazGgtAAAAABJRU5ErkJggg==" class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-white">
+    <div class="mdui-toolbar mdui-color-theme">
+      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer'}">
+        <svg t="1584293831699" class="mdui-icon material-icons icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="2041" width="24" height="24"><path d="M925.866667 849.066667h-853.333334c-12.8 0-21.333333-8.533333-21.333333-21.333334s8.533333-21.333333 21.333333-21.333333h853.333334c12.8 0 21.333333 8.533333 21.333333 21.333333s-8.533333 21.333333-21.333333 21.333334zM588.8 550.4h-512c-12.8 0-21.333333-8.533333-21.333333-21.333333s8.533333-21.333333 21.333333-21.333334h512c12.8 0 21.333333 8.533333 21.333333 21.333334s-8.533333 21.333333-21.333333 21.333333zM925.866667 251.733333h-853.333334c-12.8 0-21.333333-8.533333-21.333333-21.333333s8.533333-21.333333 21.333333-21.333333h853.333334c12.8 0 21.333333 8.533333 21.333333 21.333333s-8.533333 21.333333-21.333333 21.333333z" fill="#7162AD" p-id="2042"></path></svg>
+      </span>
+      <a href="" class="mdui-typo-title">一中表白墙</a>
+    </header>
+    <?php
+    $url1='https://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
+$urls = array(
+    $url1,
+);
+$api = 'https://data.zz.baidu.com/urls?site=https://www.deginx.com&token=HqH7admnClehqA6b';
+$ch = curl_init();
+$options =  array(
+    CURLOPT_URL => $api,
+    CURLOPT_POST => true,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POSTFIELDS => implode("\n", $urls),
+    CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
+);
+curl_setopt_array($ch, $options);
+$result = curl_exec($ch);
+echo $result;
+?>
+    <div class="mdui-drawer" id="main-drawer">
+      <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 68px;">
+        <div class="mdui-list">
+<?php if(isLogin()!=1)
+{?>        	
+        <a href="https://www.deginx.com/?plugin=register&action=qqlogin" class="mdui-list-item">
+<svg t="1584196974704" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="8877" width="24" height="24"><path d="M511.845 579.637c-60.191 0-116.781-23.44-159.343-66.002-42.562-42.562-66.002-99.151-66.002-159.343s23.44-116.78 66.002-159.343c42.562-42.562 99.152-66.002 159.343-66.002 60.191 0 116.781 23.44 159.343 66.002 42.562 42.562 66.002 99.151 66.002 159.343s-23.44 116.78-66.002 159.343c-42.56 42.563-99.15 66.002-159.343 66.002z m0-403.617c-98.3 0-178.273 79.972-178.273 178.273 0 98.3 79.973 178.272 178.273 178.272s178.273-79.972 178.273-178.272S610.145 176.02 511.845 176.02z" p-id="8878" fill="#d4237a"></path><path d="M855.698 876.994h-47.072c0-78.935-30.74-153.144-86.554-208.96-55.815-55.813-130.024-86.553-208.959-86.553-78.933 0-153.144 30.74-208.959 86.554-55.814 55.815-86.553 130.024-86.553 208.959h-47.072c0-46.24 9.06-91.106 26.931-133.356 17.256-40.798 41.955-77.433 73.41-108.887s68.089-56.153 108.886-73.41c42.251-17.87 87.118-26.93 133.356-26.93 46.24 0 91.106 9.06 133.357 26.93 40.797 17.257 77.432 41.955 108.887 73.41s56.152 68.09 73.408 108.887c17.872 42.25 26.934 87.117 26.934 133.356z" p-id="8879" fill="#d4237a"></path></svg>
+            &emsp;登录
+          </a>
+<?php }else {?>
+		<a href="https://www.deginx.com/admin" class="mdui-list-item">
+		<img width="24" heigh="24" style="vertical-align:middle; border-radius:7px;"src="<?php echo $userData['photo'];?>"  alt="<?php echo $userData['username'];?>" />
+            &emsp;<?php echo $username;?>
+          </a>
+        <a href="https://www.deginx.com/?plugin=register&action=logout" class="mdui-list-item">
+<svg t="1584197015851" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="10167" width="24" height="24"><path d="M833.633836 551.096437 481.955218 551.096437c-16.207124 0-29.359678-13.019525-29.359678-29.322839 0-16.188704 13.057387-29.321816 29.359678-29.321816l359.371834 0-74.718749-74.719772c-11.435447-11.414981-11.473309-29.894867 0.057305-41.424458 11.453866-11.453866 30.124088-11.340279 41.407062-0.038886l109.329011 109.310591c5.555529 1.069355 10.881838 3.703345 15.196097 8.018627 6.681166 6.681166 9.468652 15.691377 8.399297 24.319895 1.069355 8.630564-1.718131 17.640776-8.399297 24.321942-4.314259 4.315282-9.640568 6.987135-15.196097 8.018627l-109.329011 109.309568c-11.281951 11.30037-29.953196 11.413957-41.407062-0.039909-11.530614-11.530614-11.491729-30.009478-0.057305-41.423435L833.633836 551.096437zM745.933425 238.32392l0-97.704253c0-43.2572-35.029818-78.230736-78.230736-78.230736l-508.36931 0c-43.181475 0-78.230736 35.011398-78.230736 78.230736l0 742.759641c0 43.256176 35.011398 78.230736 78.230736 78.230736l508.36931 0c43.181475 0 78.230736-35.050284 78.230736-78.230736l0-97.704253c0-16.188704-13.134135-29.321816-29.341259-29.321816-16.208147 0-29.341259 13.133112-29.341259 29.321816l0 78.230736c0 21.571295-17.600867 39.059598-38.925544 39.059598l-469.635123 0c-21.49557 0-38.943964-17.450441-38.943964-39.059598l0-703.852516c0-21.533432 17.600867-39.019689 38.943964-39.019689l469.635123 0c21.515013 0 38.925544 17.410532 38.925544 39.019689l0 78.269621c0 16.187681 13.133112 29.321816 29.341259 29.321816C732.79929 267.645736 745.933425 254.511601 745.933425 238.32392z" p-id="10168" fill="#d4237a"></path></svg>
+            &emsp;退出账号
+          </a>
+<?php }?>
+          <a href="/love" class="mdui-list-item">
+            <svg t="1584196153121" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="4497" width="24" height="24"><path d="M625.566 589.1c31.214 0 56.52 25.304 56.52 56.52 0 31.214-25.306 56.52-56.52 56.52H399.485c-31.214 0-56.518-25.306-56.518-56.52 0-31.216 25.304-56.52 56.518-56.52h226.081z m301.439 282.599c0 31.214-25.306 56.52-56.52 56.52h-471c-31.214 0-56.518-25.306-56.518-56.52 0-31.216 25.304-56.52 56.518-56.52h414.48V502.075L512.319 232.402 211.085 501.366v370.333c0 31.214-25.304 56.52-56.52 56.52-31.214 0-56.518-25.306-56.518-56.52V476.742c-0.396-15.064 5.043-30.249 16.56-41.746l357.495-319.203c22.267-22.231 58.374-22.231 80.642 0 0.273 0.271 0.45 0.599 0.716 0.874l356.672 318.866c4.103 4.101 7.189 8.774 9.778 13.642 4.378 8.028 7.093 17.095 7.093 26.885v395.639z" fill="#d4237a" p-id="4498"></path><path d="M512.546 99.114c-31.216 0-56.522 25.304-56.522 56.52 0 31.214 25.306 56.52 56.522 56.52 31.214 0 56.52-25.306 56.52-56.52 0-31.216-25.306-56.52-56.52-56.52z m357.959 715.918c-31.216 0-56.52 25.304-56.52 56.52 0 31.214 25.304 56.52 56.52 56.52 31.214 0 56.52-25.306 56.52-56.52-0.001-31.216-25.306-56.52-56.52-56.52z m-471-226.079c-31.214 0-56.518 25.304-56.518 56.52 0 31.214 25.304 56.52 56.518 56.52 31.216 0 56.52-25.306 56.52-56.52-0.001-31.217-25.305-56.52-56.52-56.52z" fill="#d4237a" p-id="4499"></path></svg>
+            &emsp;表白墙主页
+          </a>
+          <a href="./add.php" class="mdui-list-item">
+            <svg t="1584196185638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="5569" width="24" height="24"><path d="M512.1 361.2v567.1L149.9 566.1c-39.1-39.1-58.7-90.5-58.7-141.8 0-51.3 19.6-102.6 58.7-141.8 78.3-78.3 205.2-78.3 283.6 0l78.6 78.7z" fill="#DB5941" p-id="5570"></path><path d="M512.1 361.2v567.1l362.2-362.2C913.4 527 933 475.6 933 424.3c0-51.3-19.6-102.6-58.7-141.8-78.3-78.3-205.2-78.3-283.6 0l-78.6 78.7z" fill="#BB4B35" p-id="5571"></path></svg>
+            &emsp;我要表白
+          </a>
+        </div>
+        <a href="./about.php" class="mdui-list-item">
+          <svg t="1584196931884" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="7846" width="24" height="24"><path d="M471.947636 759.319273l46.848-83.223273a46.173091 46.173091 0 0 1 63.976728-17.594182l324.491636 192.186182a48.709818 48.709818 0 0 1 17.152 65.629091l-46.848 83.223273a46.173091 46.173091 0 0 1-63.976727 17.594181l-324.491637-192.186181a48.709818 48.709818 0 0 1-17.152-65.629091zM791.272727 46.545455h93.090909a46.545455 46.545455 0 0 1 46.545455 46.545454v884.363636a46.545455 46.545455 0 0 1-46.545455 46.545455h-93.090909a46.545455 46.545455 0 0 1-46.545454-46.545455V93.090909a46.545455 46.545455 0 0 1 46.545454-46.545454z" fill="#82529d" p-id="7847"></path><path d="M861.090909 977.454545a58.181818 58.181818 0 0 1-23.272727-9.30909l-349.090909-196.654546L139.636364 968.145455a28.113455 28.113455 0 0 1-23.272728 9.30909 24.832 24.832 0 0 1-23.272727-23.272727c0.349091 4.375273 0-37.096727 0-23.272727V46.545455a46.545455 46.545455 0 0 1 46.545455-46.545455h698.181818a46.545455 46.545455 0 0 1 46.545454 46.545455v907.636363a21.736727 21.736727 0 0 1-23.272727 23.272727zM837.818182 46.545455H139.636364v867.793454l336.896-189.765818a23.016727 23.016727 0 0 1 4.538181-1.489455 23.691636 23.691636 0 0 1 2.746182-0.907636 37.236364 37.236364 0 0 1 9.821091 0 23.691636 23.691636 0 0 1 2.746182 0.907636 23.016727 23.016727 0 0 1 4.538182 1.489455L837.818182 914.338909V46.545455zM256 581.818182a23.272727 23.272727 0 0 1 23.272727-23.272727h418.909091a23.272727 23.272727 0 0 1 0 46.545454H279.272727a23.272727 23.272727 0 0 1-23.272727-23.272727z m442.181818-162.909091H279.272727a23.272727 23.272727 0 0 1 0-46.545455h418.909091a23.272727 23.272727 0 0 1 0 46.545455z m0-186.181818H279.272727a23.272727 23.272727 0 0 1 0-46.545455h418.909091a23.272727 23.272727 0 0 1 0 46.545455z" fill="#82529d" p-id="7848"></path></svg>
+          &emsp;关于表白墙
+        </a>
+         <!--<a href="https://www.deginx.com/" class="mdui-list-item">
+<svg t="1584196217715" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="6074" width="24" height="24"><path d="M559.2 66.3C274.5 37.1 36.9 274.7 66.1 559.4c20.3 197.8 200.6 378.1 398.4 398.4C749.2 987 986.8 749.4 957.6 464.7 937.3 266.9 757 86.6 559.2 66.3zM832 298.6l42.7 85.4c-57.2-10.8-73-10.3-128.1 0-32.6 8.6-49.6 31.9-57.6 47.9-4.1 8.2-6.1 17.3-5.7 26.5 1.1 27.2 0 99.9-43.4 117.7-19.2 7.9-42.7-19.1-42.7-42.7 3-134.5 63.8-160.8 80.4-169.4 17.4-9 69-44 69-44 37.4-19 85.4-21.4 85.4-21.4zM319.8 191.9l26.7 26.7c7.1 7.1 5.3 19.1-3.6 23.8-24.7 13.2-68.4 47.2-104.7 132.4-2.4 5.5-7.8 9.1-13.8 9.1h-54c0 0.1 3.6-112.6 149.4-192z m-4.4 648.9l-95.5-80c10.8-21.6 33.5-36.1 59.5-35.3 33.3 1.1 60.5 28.1 61.8 61.4 0.7 22.1-9.6 41.8-25.8 53.9z m196.4 55.4c-48.1 0-93.9-9.2-136.3-25.3 18.3-22.2 29.6-50.4 29.6-81.4 0-70.7-57.3-128.1-128.1-128.1-38.6 0-73.1 17.3-96.6 44.3-33.4-56.9-52.8-123-52.8-193.7 0-16 1.3-31.7 3.2-47.3L275 450.3c13.1-1.3 23.8-10.9 26.4-23.8 18.2-89 98.2-145.4 148.1-172.6 18.6-10.1 21.1-35.8 4.9-49.4l-66.9-55.7c39-13.4 80.7-20.9 124.3-20.9 104.8 0 199.7 42.1 269 110.1l-93 37.2S469.1 387.5 533.2 554.7c21.5 50.2 60.1 81 95.2 81 77.5 0 121.9-69 118.2-166.4 14.5-14.9 19-14.3 42.7-21.3 49.7-8.3 66 6.7 104.1 20.3 1.6 14.4 2.7 28.9 2.7 43.7C896 724.2 724 896.2 511.8 896.2z" fill="#1296db" p-id="6075"></path></svg>
+          &emsp;官网主页
+        </a>
+        <a href="https://www.deginx.com/about" class="mdui-list-item">
+<svg t="1584236036116" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="12625" width="24" height="24"><path d="M794.1 1018.8H211.9c-93 0-168.6-75.7-168.6-168.6V268c0-93 75.6-168.6 168.6-168.6h266.3c12.8 0 23.1 10.3 23.1 23.1s-10.3 23.1-23.1 23.1H211.9c-67.5 0-122.4 54.9-122.4 122.4v582.2c0 67.5 54.9 122.4 122.4 122.4h582.2c67.5 0 122.4-54.9 122.4-122.4V482.5c0-12.8 10.3-23.1 23.1-23.1s23.1 10.3 23.1 23.1v367.7c0 92.9-75.6 168.6-168.6 168.6zM378.7 707.2c11.8-27.9 23.3-54.7 34.6-80.4 5.3 5.3 13.1 7.8 21 6.2 278.2-58.6 407.3-186.3 384.2-379.7 91.5-1.1 142.1-19.9 158.3-58.5 17.1-40.7-8.1-92.1-81.1-163.2C862.9 5.3 826.5-3.1 787.5 6.8 664.4 37.9 516.7 261.2 336.2 689.2c-5 11.7 0.6 25.3 12.3 30.2 2.9 1.2 6 1.8 9 1.8 9 0.1 17.5-5.2 21.2-14z m486.5-641c76.1 74.3 72.1 103.5 69.1 110.7-3.3 7.7-23.1 32.7-142.2 30.1-6.8-0.5-13.6 2.8-18.1 8.1-4.5 5.3-6.4 12.4-5.1 19.2 33.8 180.5-76.7 295.7-337.7 352.1 183.8-408.6 300.4-518 367.6-535 6.7-1.7 13.3-2.5 19.6-2.5 17 0.1 32.6 6 46.8 17.3z" fill="#13227a" p-id="12626"></path></svg>
+          &emsp;DEGINX服务隐私政策
+        </a>-->
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <svg t="1584197077101" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="11030" width="24" height="24"><path d="M405.333333 661.333333a42.666667 42.666667 0 0 1-30.08-72.746666l512-512a42.666667 42.666667 0 0 1 60.16 60.16l-512 512A42.666667 42.666667 0 0 1 405.333333 661.333333z" fill="#1296db" p-id="11031"></path><path d="M794.453333 782.293333a61.44 61.44 0 0 1-21.333333-3.626666L59.52 528a64 64 0 0 1-3.413333-119.466667L885.333333 61.44a64 64 0 0 1 87.68 71.04l-115.84 597.333333a64 64 0 0 1-62.72 51.84z m-21.333333-68.053333zM140.16 465.92l638.08 224 103.466667-534.4z" fill="#1296db" p-id="11032"></path><path d="M426.666667 887.253333a66.986667 66.986667 0 0 1-24.533334-4.906666A64 64 0 0 1 362.666667 823.253333V640a42.666667 42.666667 0 0 1 85.333333 0v131.626667l119.253333-119.04a42.666667 42.666667 0 0 1 60.16 60.16l-155.52 155.733333a64 64 0 0 1-45.226666 18.773333z" fill="#1296db" p-id="11033"></path></svg>
+            &emsp;直通作者
+            <svg t="1584292309073" class="icon mdui-collapse-item-arrow mdui-icon material-icons" viewBox="0 0 1024 1024" version="1.1" xmlns="https://www.w3.org/2000/svg" p-id="3273" width="16" height="16"><path d="M512 770.504748a88.402878 88.402878 0 0 1-62.618705-25.857842L8.619281 303.737554a29.467626 29.467626 0 0 1 41.69669-41.623022l440.835684 440.835684a30.204317 30.204317 0 0 0 41.69669 0l440.835684-440.835684a29.467626 29.467626 0 0 1 41.69669 41.623022L574.618705 744.646906a87.739856 87.739856 0 0 1-62.618705 25.857842z" fill="#d4237a" p-id="3274"></path></svg>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            <a href="https://wpa.qq.com/msgrd?v=3&uin=1309634881&site=qq&menu=yes" class="mdui-list-item mdui-ripple ">QQ</a>
+            <a href="mailto:1309634881@qq.com" class="mdui-list-item mdui-ripple ">Mail</a>
+            <a href="https://space.bilibili.com/96876893" class="mdui-list-item mdui-ripple ">Bilibili</a>
+             <a href="https://github.com/dengjunyuan0217/" class="mdui-list-item mdui-ripple ">Github</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <br />
