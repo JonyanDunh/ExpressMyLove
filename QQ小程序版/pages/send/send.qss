@@ -1,0 +1,32 @@
+.add_icon
+{
+position: fixed;
+    bottom: 48px;
+    right: 20rpx;
+    top:38.2%;
+  width: 48px;
+  height: 48px;
+}
+.send
+{
+  width: 80px;
+  height: 80px;
+}
+input{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 13px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
+textarea{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 13px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
