@@ -6,7 +6,7 @@
   <h3 align="center">ExpressMyLove</h3>
 
   <p align="center">
-    一个校园表白墙，拥有Web端和QQ小程序。Web端用PHP进行开发，并且充当服务端的作用。表白墙有表白管理员审核功能，而且接入了阿里云的关键词过滤。2020年初开发的，现已停止开发。
+    一个校园表白墙，拥有Web端和QQ小程序。Web端用PHP进行开发，并且充当服务端的作用。表白墙有表白管理员审核功能，而且接入了阿里云的关键词过滤。
     <br/>
     <br/>
   </p>
@@ -14,6 +14,10 @@
 </p>
 
 ![Contributors](https://img.shields.io/github/contributors/JonyanDunh/ExpressMyLove?color=dark-green) ![Forks](https://img.shields.io/github/forks/JonyanDunh/ExpressMyLove?style=social) ![Stargazers](https://img.shields.io/github/stars/JonyanDunh/ExpressMyLove?style=social) ![Issues](https://img.shields.io/github/issues/JonyanDunh/ExpressMyLove) ![License](https://img.shields.io/github/license/JonyanDunh/ExpressMyLove)
+
+## 项目介绍
+
+**本项目于2020年初进行开发，现已停止继续开发。**
 
 ## 项目截图
 
